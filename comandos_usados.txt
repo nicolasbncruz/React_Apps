@@ -1,0 +1,3 @@
+npx create-react-app basicos
+(nombre debe estar en mayuscula sin espacios ni caracteres especiales)
+npm start (para empezar)
