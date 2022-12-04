@@ -32,13 +32,13 @@ const Comprobantes = () => {
                             <th>Precio Total Comprobante:</th>                            
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style={{verticalAlign: 'middle'}}>
                         {
                             comprobantes.map((comprobante) => (
-                                <tr key={comprobante.id}>
-                                    <td>{                                        
+                                <tr key={comprobante.id} style={{paddingTop: 'inherit'}}>
+                                    <td >{
                                     comprobante.items.map((item)=>(
-                                      <tr key={item.id}>
+                                      <tr key={item.id} style={{paddingTop: 'inherit'}}>
                                         <td> | nombre: {item.nombre}</td>
                                         <td> | precio unitario: S/{item.precio}</td>
                                         <td> | cantidad: {item.cantidad}</td>
