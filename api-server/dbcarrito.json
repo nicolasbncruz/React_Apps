@@ -23,30 +23,6 @@
       ],
       "precioTotal": 3150,
       "id": 1
-    },
-    {
-      "items": [
-        {
-          "id": 2,
-          "nombre": "Laptop",
-          "marca": "HP",
-          "descripcion": "es una laptop de ultima generacion core i5 con SSD 1TB",
-          "precio": 1900,
-          "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/6399404-800-800/1840542.jpg?v=637758109658500000",
-          "cantidad": 1
-        },
-        {
-          "id": 1,
-          "nombre": "Tablet",
-          "marca": "Lenovo",
-          "descripcion": "es una tablet con 32gb con HD",
-          "precio": 1250,
-          "imagen": "https://i.blogs.es/50c141/lenoco/original.jpeg",
-          "cantidad": 1
-        }
-      ],
-      "precioTotal": 3150,
-      "id": 2
     }
   ]
 }

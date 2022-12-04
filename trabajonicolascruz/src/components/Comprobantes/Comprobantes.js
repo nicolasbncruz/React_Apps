@@ -42,9 +42,10 @@ const Comprobantes = () => {
                                         <td> | nombre: {item.nombre}</td>
                                         <td> | precio unitario: S/{item.precio}</td>
                                         <td> | cantidad: {item.cantidad}</td>
+                                        <td> | <img src={item.imagen} width={50}></img>  </td>
                                       </tr>
                                     ))
-                                    }</td>
+                                    }</td> 
                                     <td>S/{comprobante.precioTotal}</td>
                                 </tr>
                             ))
