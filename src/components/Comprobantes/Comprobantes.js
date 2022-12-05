@@ -24,25 +24,28 @@ const Comprobantes = () => {
   return (
     <div className="container">
             <p className="fs-5">Lista de Comprobantes Total: {comprobantes.length}</p>
-            <div>
-                <table className='table table-hover text-center'>
-                    <thead>
-                        <tr>                            
-                            <th>Items:</th>
-                            <th>Precio Total Comprobante:</th>                            
+            <div >
+                <table className='table table-striped table-hover text-center' style={{borderLeftWidth: 'medium', borderRightWidth: 'medium'}}>
+                    <thead >
+                        <tr>
+                            <th>ID Comprobante</th>
+                            <th>Items</th>
+                            <th>Precio Total Comprobante</th>
                         </tr>
                     </thead>
                     <tbody style={{verticalAlign: 'middle'}}>
                         {
                             comprobantes.map((comprobante) => (
-                                <tr key={comprobante.id} style={{paddingTop: 'inherit'}}>
-                                    <td >{
+                                <tr key={comprobante.id} style={{paddingTop: 'inherit',borderLeftWidth: 'medium', borderRightWidth: 'medium'}}>
+                                    <td>{comprobante.id}</td>
+                                    <td style={{textAlign: 'left',borderLeftWidth: 'medium', borderRightWidth: 'medium'}}>{
                                     comprobante.items.map((item)=>(
                                       <tr key={item.id} style={{paddingTop: 'inherit'}}>
-                                        <td> | nombre: {item.nombre}</td>
-                                        <td> | precio unitario: S/{item.precio}</td>
-                                        <td> | cantidad: {item.cantidad}</td>
-                                        <td> | <img src={item.imagen} width={50}></img>  </td>
+                                        <td> <b> Nombre:</b> {item.nombre}</td>
+                                        <td> <img src={item.imagen} width={50}/></td>
+                                        <td> <b> | Precio Unitario:</b> S/{item.precio}</td>
+                                        <td> <b> | Cantidad:</b> {item.cantidad}.00</td>
+                                        <td> <b> | Sub-total:</b> S/{item.cantidad*item.precio}</td>                                        
                                       </tr>
                                     ))
                                     }</td> 
