@@ -6,15 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-## `npm start`
-
+# `npm start`
+-------------
 Runs the app in the development mode.\
 Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 In the api-server directory, you can run:
 
-## `npm run server`
-
+# `npm run server`
+-----------------
 Runs the appi-server in the development mode.\
 Open [http://localhost:3002/comprobantes](http://localhost:3002/comprobantes) to view it in your browser.
 
