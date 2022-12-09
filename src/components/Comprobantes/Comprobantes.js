@@ -31,6 +31,7 @@ const Comprobantes = () => {
                             <th>ID Comprobante</th>
                             <th>Items</th>
                             <th>Precio Total Comprobante</th>
+                            <th>Eliminar</th>
                         </tr>
                     </thead>
                     <tbody style={{verticalAlign: 'middle'}}>
@@ -49,7 +50,8 @@ const Comprobantes = () => {
                                       </tr>
                                     ))
                                     }</td> 
-                                    <td>S/{comprobante.precioTotal}</td>
+                                    <td style={{textAlign: 'left',borderLeftWidth: 'medium', borderRightWidth: 'medium'}}>S/{comprobante.precioTotal}</td>
+                                    <td><button className='btn bg-danger text-white'>Eliminar</button> </td>
                                 </tr>
                             ))
                         }
